@@ -66,8 +66,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Poppins', 'system-ui', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
       },
       animation: {
         'slide-up': 'slideUp 0.3s ease-out',

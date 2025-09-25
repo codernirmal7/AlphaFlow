@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/Inter.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/Inter.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/Inter.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto.ttf") format("truetype");
+    font-weight: 500;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    color: black;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+h4,
+h5,
+h6 {
+    font-family: "Inter", sans-serif;
+}
+
+p,
+li,
+span,
+small {
+    font-family: "Roboto", "Inter", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: "Inter", sans-serif;
+}
