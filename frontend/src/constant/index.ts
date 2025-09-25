@@ -1,4 +1,4 @@
-import { Plan } from '../types/index';
+import { Plan, User } from '../types/index';
 
 export const plans: Plan[] = [
     {
@@ -48,3 +48,16 @@ export const plans: Plan[] = [
         earningPotential: 3000,
     },
 ];
+
+export const mockUser: User = {
+    id: '1',
+    name: 'John Smith',
+    email: 'john.smith@example.com',
+    phone: '+1 (555) 123-4567',
+    avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2',
+    walletBalance: 1847.50,
+    currentPlan: 'medium',
+    referralCode: 'JOH123456',
+    totalReferrals: 12,
+    joinDate: '2024-01-15',
+};

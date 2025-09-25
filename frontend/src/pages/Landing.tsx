@@ -83,7 +83,7 @@ export function Landing() {
                                     <ArrowRight className="ml-2 h-5 w-5" />
                                 </Button>
                             </Link>
-                            <Button variant="secondary" size="lg" className="text-base px-8">
+                            <Button variant="ghost" size="lg" className="text-base px-8">
                                 Learn More
                             </Button>
                         </div>
@@ -163,7 +163,7 @@ export function Landing() {
                                             <Link to="/auth/signup">
                                                 <Button
                                                     className="w-full"
-                                                    variant={plan.popular ? 'default' : 'outline'}
+                                                    variant={plan.popular ? 'primary' : 'outline'}
                                                 >
                                                     Get Started
                                                 </Button>
