@@ -1,0 +1,50 @@
+import { Plan } from '../types/index';
+
+export const plans: Plan[] = [
+    {
+        id: '1',
+        name: 'basic',
+        displayName: 'Basic Plan',
+        price: 29,
+        features: [
+            'Up to 20 tasks per month',
+            'Basic earning potential',
+            'Email support',
+            'Standard withdrawal processing'
+        ],
+        taskLimit: 20,
+        earningPotential: 500,
+    },
+    {
+        id: '2',
+        name: 'medium',
+        displayName: 'Medium Plan',
+        price: 59,
+        features: [
+            'Up to 50 tasks per month',
+            'Enhanced earning potential',
+            'Priority support',
+            'Faster withdrawal processing',
+            'Bonus tasks access'
+        ],
+        taskLimit: 50,
+        earningPotential: 1200,
+        popular: true,
+    },
+    {
+        id: '3',
+        name: 'high',
+        displayName: 'High Plan',
+        price: 99,
+        features: [
+            'Unlimited tasks per month',
+            'Maximum earning potential',
+            'Premium support',
+            'Instant withdrawal processing',
+            'Exclusive high-value tasks',
+            'Referral bonus multiplier'
+        ],
+        taskLimit: -1,
+        earningPotential: 3000,
+    },
+];
