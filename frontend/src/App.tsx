@@ -6,10 +6,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "./store";
 import { loginSuccess } from "./store/slices/authSlice";
 import { mockUser } from "./constant";
+import { SignUp } from "./pages/auth/SignUp";
 
 function App() {
   const dispatch = useDispatch();
-  const { isAuthenticated } = useSelector((state: RootState) => state.auth);
+  const isAuthenticated = false;
 
   // Mock auto-login for demo purposes
   useEffect(() => {
@@ -19,14 +20,6 @@ function App() {
     }
   }, [dispatch, isAuthenticated]);
 
-  // Save auth state for demo persistence
-  useEffect(() => {
-    if (isAuthenticated) {
-      localStorage.setItem('earnhub_demo_auth', 'true');
-    } else {
-      localStorage.removeItem('earnhub_demo_auth');
-    }
-  }, [isAuthenticated]);
 
   return (
     <div className="App">
@@ -36,6 +29,11 @@ function App() {
         <Route
           path="/signin"
           element={isAuthenticated ? <Navigate to="/dashboard" /> : <SignIn />}
+        />
+
+        <Route
+          path="/signup"
+          element={isAuthenticated ? <Navigate to="/dashboard" /> : <SignUp />}
         />
 
         {/* Protected routes */}
