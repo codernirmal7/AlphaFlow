@@ -5,7 +5,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 
 const getPageTitle = (pathname: string): string => {
     switch (pathname) {
-        case '/dashboard': return 'EarnHub';
+        case '/dashboard': return 'AlphaFlow';
         case '/tasks': return 'Tasks';
         case '/earnings': return 'Earnings';
         case '/referrals': return 'Referrals';

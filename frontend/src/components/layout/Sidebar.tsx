@@ -46,7 +46,7 @@ export function Sidebar({ className }: SidebarProps) {
                     <div className="w-8 h-8 bg-primary-600 rounded-xl flex items-center justify-center">
                         <TrendingUp className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-xl font-bold font-heading text-gray-900">EarnPro</span>
+                    <span className="text-xl font-bold font-heading text-gray-900">AlphaFlow</span>
                 </div>
             </div>
 
