@@ -28,3 +28,54 @@ export interface AuthState {
     loading: boolean;
     error: string | null;
 }
+
+export interface Task {
+    id: string;
+    title: string;
+    description: string;
+    icon: string;
+    reward: number;
+    type: 'daily' | 'weekly';
+    status: 'pending' | 'completed' | 'in_progress';
+    deadline?: string;
+    category: string;
+}
+
+
+export interface Transaction {
+    id: string;
+    type: 'task' | 'referral' | 'withdrawal' | 'recharge';
+    amount: number;
+    status: 'completed' | 'pending' | 'failed';
+    date: string;
+    description: string;
+}
+
+export interface Referral {
+    id: string;
+    name: string;
+    email: string;
+    joinDate: string;
+    earnings: number;
+    status: 'active' | 'inactive';
+    level: number;
+}
+
+export interface Notification {
+    id: string;
+    title: string;
+    message: string;
+    type: 'info' | 'success' | 'warning' | 'error';
+    read: boolean;
+    date: string;
+}
+
+export interface AppState {
+    tasks: Task[];
+    plans: Plan[];
+    transactions: Transaction[];
+    referrals: Referral[];
+    notifications: Notification[];
+    loading: boolean;
+    error: string | null;
+}

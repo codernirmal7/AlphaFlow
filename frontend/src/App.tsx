@@ -7,15 +7,16 @@ import { RootState } from "./store";
 import { loginSuccess } from "./store/slices/authSlice";
 import { mockUser } from "./constant";
 import { SignUp } from "./pages/auth/SignUp";
+import { Dashboard } from "./pages/Dashboard";
+import { ResponsiveLayout } from "./components/layout/ResponsiveLayout";
 
 function App() {
   const dispatch = useDispatch();
-  const isAuthenticated = false;
+  const { isAuthenticated } = useSelector((state: RootState) => state.auth);
 
   // Mock auto-login for demo purposes
   useEffect(() => {
-    const savedAuth = localStorage.getItem('earnhub_demo_auth');
-    if (savedAuth && !isAuthenticated) {
+    if (isAuthenticated) {
       dispatch(loginSuccess(mockUser));
     }
   }, [dispatch, isAuthenticated]);
@@ -38,8 +39,10 @@ function App() {
 
         {/* Protected routes */}
         {isAuthenticated ? (
-          <Route path="/" element={<></>}>
+          <Route path="/" element={<ResponsiveLayout />}>
+            <Route path="dashboard" element={<Dashboard />} />
           </Route>
+
         ) : (
           <Route path="*" element={<Navigate to="/signin" />} />
         )}
