@@ -12,6 +12,7 @@ import { ResponsiveLayout } from "./components/layout/ResponsiveLayout";
 import { Tasks } from "./pages/Tasks";
 import { Earnings } from "./pages/Earnings";
 import { Referrals } from "./pages/Referrals";
+import { Profile } from "./pages/Profile";
 
 function App() {
   const dispatch = useDispatch();
@@ -47,6 +48,7 @@ function App() {
             <Route path="tasks" element={<Tasks />} />
             <Route path="earnings" element={<Earnings />} />
             <Route path="referrals" element={<Referrals />} />
+            <Route path="profile" element={<Profile />} />
           </Route>
 
         ) : (
