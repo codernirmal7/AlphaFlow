@@ -9,6 +9,7 @@ import { mockUser } from "./constant";
 import { SignUp } from "./pages/auth/SignUp";
 import { Dashboard } from "./pages/Dashboard";
 import { ResponsiveLayout } from "./components/layout/ResponsiveLayout";
+import { Tasks } from "./pages/Tasks";
 
 function App() {
   const dispatch = useDispatch();
@@ -41,6 +42,7 @@ function App() {
         {isAuthenticated ? (
           <Route path="/" element={<ResponsiveLayout />}>
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="tasks" element={<Tasks />} />
           </Route>
 
         ) : (

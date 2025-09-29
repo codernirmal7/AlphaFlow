@@ -69,7 +69,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
                             <div className="flex items-center space-x-1 bg-primary-50 px-3 py-1.5 rounded-full">
                                 <Wallet size={16} className="text-primary-600" />
                                 <span className="font-semibold text-primary-900 text-sm">
-                                    ${user?.walletBalance?.toFixed(0)}
+                                    NPR {user?.walletBalance?.toFixed(0)}
                                 </span>
                             </div>
 

@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
                         <div className="flex items-center space-x-2 bg-primary-50 px-4 py-2 rounded-2xl">
                             <Wallet size={20} className="text-primary-600" />
                             <span className="font-semibold text-primary-900">
-                                ${user?.walletBalance?.toFixed(2)}
+                                NPR {user?.walletBalance?.toFixed(2)}
                             </span>
                         </div>
 

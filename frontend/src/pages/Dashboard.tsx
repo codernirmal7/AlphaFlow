@@ -27,7 +27,7 @@ export const Dashboard: React.FC = () => {
     const stats = [
         {
             title: 'Wallet Balance',
-            value: `$${user?.walletBalance?.toFixed(2)}`,
+            value: `NPR ${user?.walletBalance?.toFixed(2)}`,
             icon: DollarSign,
             color: 'bg-primary-500',
             trend: '+12.5%',
@@ -48,7 +48,7 @@ export const Dashboard: React.FC = () => {
         },
         {
             title: 'This Month Earnings',
-            value: '$847.20',
+            value: 'NPR 847.20',
             icon: TrendingUp,
             color: 'bg-purple-500',
             trend: '+22.1%',
@@ -247,7 +247,7 @@ export const Dashboard: React.FC = () => {
                                     <div className="text-right">
                                         <p className={`font-semibold ${transaction.amount > 0 ? 'text-success-600' : 'text-error-600'
                                             }`}>
-                                            {transaction.amount > 0 ? '+' : ''}${Math.abs(transaction.amount).toFixed(2)}
+                                            {transaction.amount > 0 ? '+' : ''}NPR {Math.abs(transaction.amount).toFixed(2)}
                                         </p>
                                         <p className={`text-xs capitalize ${transaction.status === 'completed' ? 'text-success-600' :
                                             transaction.status === 'pending' ? 'text-accent-600' :

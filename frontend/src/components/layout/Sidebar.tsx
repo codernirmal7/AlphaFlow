@@ -18,8 +18,8 @@ import { cn } from '../../utils/cn';
 
 const navigationItems = [
     { icon: LayoutDashboard, name: 'Dashboard', href: '/dashboard' },
+    { icon: CreditCard, name: 'Recharge', href: '/re-charge' },
     { icon: CheckSquare, name: 'Tasks', href: '/tasks' },
-    { icon: CreditCard, name: 'Plans', href: '/plans' },
     { icon: DollarSign, name: 'Earnings', href: '/earnings' },
     { icon: Users, name: 'Referrals', href: '/referrals' },
     { icon: User, name: 'Profile', href: '/profile' },
