@@ -10,6 +10,7 @@ import { SignUp } from "./pages/auth/SignUp";
 import { Dashboard } from "./pages/Dashboard";
 import { ResponsiveLayout } from "./components/layout/ResponsiveLayout";
 import { Tasks } from "./pages/Tasks";
+import { Earnings } from "./pages/Earnings";
 
 function App() {
   const dispatch = useDispatch();
@@ -43,6 +44,7 @@ function App() {
           <Route path="/" element={<ResponsiveLayout />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="tasks" element={<Tasks />} />
+            <Route path="earnings" element={<Earnings />} />
           </Route>
 
         ) : (
