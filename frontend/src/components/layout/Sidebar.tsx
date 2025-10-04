@@ -39,7 +39,7 @@ export function Sidebar({ className }: SidebarProps) {
     };
 
     return (
-        <div className={cn('bg-white border-r border-gray-200 w-64 min-h-screen flex flex-col', className)}>
+        <div className={cn('bg-white border-r border-gray-200 w-64 min-h-[dvh] flex flex-col', className)}>
             {/* Logo */}
             <div className="p-6 border-b border-gray-200">
                 <div className="flex items-center space-x-3">

@@ -21,7 +21,7 @@ export const MobileLayout: React.FC = () => {
     const title = getPageTitle(location.pathname);
 
     return (
-        <div className="flex flex-col h-screen bg-gray-50 md:hidden">
+        <div className="flex flex-col h-[100dvh] bg-gray-50 md:hidden">
             <MobileHeader title={title} />
             <main className="flex-1 overflow-y-auto pb-20">
                 <div className="p-4">
